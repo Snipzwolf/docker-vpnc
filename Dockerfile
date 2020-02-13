@@ -9,4 +9,4 @@ RUN chmod 0555 /opt/entrypoint.sh;
 RUN apt-get update; apt-get install -qqy vpnc; apt-get clean; \
     rm -rf /var/lib/apt/lists/*;
 
-ENTRYPOINT ["/entrypoint.sh"]
+ENTRYPOINT ["/opt/entrypoint.sh"]
