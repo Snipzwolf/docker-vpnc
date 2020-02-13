@@ -1,4 +1,4 @@
-#!/usr/bin/env ash
+#!/usr/bin/env bash
 
 EXTRA_SCRIPT="";
 CONFIG_FILE="/etc/vpnc/client.conf";
