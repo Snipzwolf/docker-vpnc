@@ -19,4 +19,4 @@ fi
 [ -d /dev/net ] || mkdir -p /dev/net
 [ -c /dev/net/tun ] || (mknod /dev/net/tun c 10 200 && chmod 0666 /dev/net/tun )
 
-exec /usr/sbin/openvpn --config $CONFIG_FILE < /dev/null
+exec /usr/sbin/vpnc --non-inter --no-detach $CONFIG_FILE < /dev/null
